@@ -7,6 +7,11 @@ const setCookie = (tokens) => {
   }`;
 };
 
+const clearCookie = () => {
+  document.cookie = `accessToken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
+  document.cookie = `refreshToken=;  expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
+};
+
 const getCookie = (cookieName) => {
   return document.cookie
     .split(";")
@@ -14,4 +19,4 @@ const getCookie = (cookieName) => {
     ?.split("=")[1];
 };
 
-export { setCookie, getCookie };
+export { setCookie, getCookie, clearCookie };

@@ -1,0 +1,22 @@
+.dashboard {
+    display: flex;
+}
+
+.post {
+    min-width: 25%;
+    max-width: 25%;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    height: fit-content;
+}
+
+.list {
+    min-width: 75%;
+    max-width: 75%;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+}
